@@ -1,11 +1,61 @@
-body {
-    background: red;
+:root {
+    --branding-color: rgba(231, 164, 30, 0.842);
+    --secondary-color: rgba(238, 164, 79, 0.349);
+    --font-family: 'Playfair Display', serif;
 }
 
-h1 {
-    font-family: 'Playfair Display', serif;
+
+.first {
+    background: var(--secondary-color);
+    text-align: center;
+    padding: 160px 20px;
 }
 
-p{
-    font-family: 'Playfair Display', serif;
+.first h1 {
+    font-family: var(--font-family);
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.first h2 {
+    
+    font-weight: normal;
+    line-height: 2;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.664);
+}
+
+
+
+.btn-branding {
+    background: var(--branding-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 15px;
+    line-height: 27px;
+    padding: 12px;
+}
+
+.btn-branding-outline {
+    color: var(--branding-color);
+    border-radius: 6px;
+    border: 1px solid;
+    font-size: 15px;
+    line-height: 27px;
+    padding: 7px; 
+}
+
+.project-description {
+    padding: 120px 60px;
+}
+
+@media (max-width: 900px) {
+    .first h1 {
+        font-size: 50px;
+    }
+    .project-description {
+        padding: 0;
+        text-align: center;
+    }
 }
