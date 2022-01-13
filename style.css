@@ -4,6 +4,9 @@
     --font-family: 'Playfair Display', serif;
 }
 
+.top-sections {
+    padding-left: 100px;
+}
 
 .first {
     background: var(--secondary-color);
