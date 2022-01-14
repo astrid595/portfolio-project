@@ -29,6 +29,10 @@
     color: rgba(0, 0, 0, 0.664);
 }
 
+h4 {
+    font-size: 48px;
+}
+
 .about-section {
     padding: 160px 20px;
 }
@@ -60,10 +64,18 @@
 .btn-branding {
     background: var(--branding-color);
     border-radius: 6px;
+    text-decoration: none;
     color: white;
     font-size: 15px;
     line-height: 27px;
     padding: 12px;
+}
+
+.btn-branding:hover {
+    background: white;
+    color: var(--branding-color);
+    border: 1px solid;
+    transition: all 120ms ease-in-out;
 }
 
 .btn-branding-outline {
@@ -79,10 +91,77 @@
     padding: 120px 60px;
 }
 
+nav {
+    padding: 20px 0;
+    box-shadow: 5px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    line-height: 40px;
+    margin-left: 15px;
+}
+
+ nav a {
+     text-decoration: none;
+     color: black;
+ }
+
+nav a:hover,
+nav li.active a {
+     color: var(--branding-color);
+     transition: all 100ms ease-in-out;
+ }
+
+ footer .email-link {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+ }
+
+ footer .contact-box {
+     background: var(--secondary-color);
+     padding: 30px 120px;
+     margin: 20px;
+     border-radius: 10px;
+ }
+
+ footer .contact-box p {
+    font-size: 20px; 
+    margin: 0;
+ }
+
+ footer .email-link:hover {
+     color: var(--branding-color);
+ }
+
+ footer .social-links a{
+     margin: 0 20px;
+     color: var(--branding-color);
+     background: var(--secondary-color);
+     padding: 10px 14px;
+     font-size: 18px;
+     border-radius: 50%;
+     transition: all 100ms ease-in-out;
+ }
+
+ footer .social-links a:hover {
+     color: white;
+     background: var(--branding-color);
+ }
+
 @media (max-width: 900px) {
     .first h1 {
         font-size: 50px;
     }
+
+  
     .project-description {
         padding: 0;
         text-align: center;
@@ -91,5 +170,17 @@
     .content-container {
         text-align: center;
         padding: 0;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    footer h4 {
+        font-size: 26px;
+    }
+
+    footer .contact-box {
+        padding: 30px;
     }
 }
