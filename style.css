@@ -229,6 +229,10 @@ nav li.active a {
         padding: 50px 15px;
     }
 
+    .logo-sig {
+        max-height: 25px;
+    }
+
     .content h3 {
         font-size: 30px;
     }
