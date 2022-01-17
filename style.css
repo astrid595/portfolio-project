@@ -194,9 +194,15 @@ nav li.active a {
      text-align: center;
  }
 
+.contact-head {
+    background: var(--secondary-color);
+    text-align: center;
+    padding: 80px 20px;
+    font-size: 50px;
+}
+
  .contact-info p {
      text-align: center;
-     
  }
 
  .contact-info h1 {
