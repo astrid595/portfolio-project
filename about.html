@@ -16,9 +16,12 @@
 <body>
     <div class="container">
       <nav class="d-flex justify-content-between">
-          <span>
-            <a href="/" class="logo">A S T R I D <img src="images/signature.JPG" alt="logo firma"></a>
-          </span>
+        <span>
+            <a href="/" class="logo d-none d-md-block">
+                A S T R I D <img src="images/signature.JPG" alt="logo firma"  class="logo-sig">
+            </a>
+            <img src="images/signature.JPG" alt="logo firma" class="logo-sig d-block d-md-none">
+        </span>
           <ul>
               <li> <a href="/">Home</a> 
               </li>
@@ -37,19 +40,41 @@
     <div class="content-container container">
         <div class="row">
             <div class="col-lg-6">
-                <img src="images/myself.jpg" alt="Selfie-with-scarf" class="img-fluid"/>
+                <img src="images/myself.jpg" alt="Selfie-with-scarf" class="img-fluid mb-4"/>
             </div>
             <div class="col-md-6">
                 <div class="content-container-content">
-                    <h2>Hello everyone!</h2>
-                    <h1 class="mb-4">My name is Astrid</h1>
-                    <p>I am a front-end developer currently based in Asutralia. I'm originally from Mexico.</p>
-                    <p>I learning how to code thanks to online courses, SheCodes to be precise, I've been enjoying so much the journey of betting a new skill and pushing me to unkown places.</p>
-                    <p class="mb-4">Being able to create something of my own in the infinite space of internet was one of my goals when I ran myself into the coding world, but not everything was easy and beautiful, so I invite you to get to knwo more about how I started and my progress through different projects.</p>
-                    <a href="" class="btn btn-branding">Know my projects</a>
+                    <h2 class="d-none d-md-block">Hello everyone!</h2>
+                    <h5 class="mb-4 head-about">My name is Astrid</h5>
+                    <div class="desc-about mb-4">
+                        <p>I am a front-end developer currently based in Asutralia. I'm originally from Mexico.</p>
+                        <p>I learning how to code thanks to online courses, SheCodes to be precise, I've been enjoying so much the journey of betting a new skill and pushing me to unkown places.</p>
+                        <p>Being able to create something of my own in the infinite space of internet was one of my goals when I ran myself into the coding world, but not everything was easy and beautiful, so I invite you to get to knwo more about how I started and my progress through different projects.</p>
+                    </div>
+                    <a href="work.html" class="btn btn-branding">Know my projects</a>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="contact-box d-flex justify-content-between mb-3 d-none d-md-flex">
+        <h4>Work inquiry</h4>
+        <p class="text-muted">Let's work together</p>
+        <div>
+            <a href="contact.html" class="bt btn-branding">
+                Contact me
+            </a>
+        </div>
+    </div>
+
+    <footer class="mt-5"> 
+        <div class="social-links d-flex justify-content-center">
+            <a href="https://github.com/astrid595"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/astrid-vargas-92348110a/"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:astrid.vu@hotmail.com"><i class="far fa-envelope"></i></a>
+        </div>
+    </footer>
+    
+    <p class="text-center mt-5">This project was coded by Astrid VU and it is <a href="https://github.com/astrid595/portfolio-project">open-sourced</a></p>
 </body>
 </html>

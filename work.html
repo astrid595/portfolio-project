@@ -17,7 +17,10 @@
     <div class="container">
         <nav class="d-flex justify-content-between">
             <span>
-                <a href="/" class="logo">A S T R I D <img src="images/signature.JPG" alt="logo firma"></a>
+                <a href="/" class="logo d-none d-md-block">
+                    A S T R I D <img src="images/signature.JPG" alt="logo firma"  class="logo-sig">
+                </a>
+                <img src="images/signature.JPG" alt="logo firma" class="logo-sig d-block d-md-none">
             </span>
             <ul>
                 <li> <a href="/">Home</a> 
@@ -34,32 +37,54 @@
             </ul>
         </nav>
       </div>
-    <div class="content-container container">
-        <div class="content">
-            <h1 class="mb-4">Take a look at what I've been working on!</h1>
-        </div>
+
+      <div class="content mb-4">
+        <h3>Take a look at what I've been working on!</h3>
+    </div>
+
+    <div class="content-container container">   
         <div class="row">
             <div class="col-md-6 mb-4">
-                <img src="images/weather.png" alt="" class="img-fluid mb-3"/>
+                <img src="images/weather.png" alt="Image weather project" class="img-fluid mb-3"/>
                 <h3 class="text-center m-0">Weather project</h3>
                 <p class="text-center text-muted">Built with HTML, CSS and JS</p>
             </div>
             <div class="col-md-6">
-                <img src="images/blog.JPG" alt="" class="img-fluid mb-3" width="auto"/>
+                <img src="images/blog.JPG" alt="Image blog" class="img-fluid mb-3" width="auto"/>
                 <h3 class="text-center m-0">Personal Blog</h3>
                 <p class="text-center text-muted">Built with HTML and CSS</p>
             </div>
             <div class="col-md-6">
-                <img src="images/dictionary.PNG" alt="" class="img-fluid mb-3" width="auto"/>
+                <img src="images/dictionary.PNG" alt="Image dictionary" class="img-fluid mb-3" width="auto"/>
                 <h3 class="text-center m-0">Dictionary project</h3>
                 <p class="text-center text-muted">Built with HTML, CSS and React</p>
             </div>
             <div class="col-md-6">
-                <img src="images/Art.PNG" alt="" class="img-fluid mb-3" width="auto"/>
+                <img src="images/Art.PNG" alt="Image art project" class="img-fluid mb-3" width="auto"/>
                 <h3 class="text-center m-0">Art project</h3>
                 <p class="text-center text-muted">Built with HTML, CSS and React</p>
             </div>
         </div>
     </div>
+
+    <div class="contact-box d-flex justify-content-between mb-3 d-none d-md-flex">
+        <h4>Work inquiry</h4>
+        <p class="text-muted">Let's work together</p>
+        <div>
+            <a href="contact.html" class="bt btn-branding">
+                Contact me
+            </a>
+        </div>
+    </div>
+    
+    <footer class="mt-5">
+        <div class="social-links d-flex justify-content-center">
+            <a href="https://github.com/astrid595"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/astrid-vargas-92348110a/"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:astrid.vu@hotmail.com"><i class="far fa-envelope"></i></a>
+        </div>
+    </footer>
+    
+    <p class="text-center mt-5">This project was coded by Astrid VU and it is <a href="https://github.com/astrid595/portfolio-project">open-sourced</a></p>
 </body>
 </html>

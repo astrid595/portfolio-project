@@ -3,6 +3,7 @@
     --secondary-color: rgba(238, 164, 79, 0.349);
     --font-family: 'Playfair Display', serif;
     --second-font: 'Playfair Display SC', serif;
+    --other-font: 'Poppins', sans-serif;
 }
 
 .logo {
@@ -11,14 +12,14 @@
     font-family: var(--second-font);
 }
 
-.logo img {
+.logo-sig {
     max-height: 60px;
 }
 
 .first {
     background: var(--secondary-color);
     text-align: center;
-    padding: 160px 20px;
+    padding: 120px 20px;
 }
 
 .first h1 {
@@ -34,6 +35,14 @@
     line-height: 2;
     font-size: 20px;
     color: rgba(0, 0, 0, 0.664);
+}
+
+.content h3 {
+    font-size: 40px;
+    font-family: var(--second-font);
+    background: var(--secondary-color);
+    text-align: center;
+    padding: 40px 20px;
 }
 
 h4 {
@@ -55,13 +64,19 @@ h4 {
 }
 
 .content h3 {
-    font-size: 24px;
+    font-size: 40px;
     font-family: var(--font-family);
     line-height: 1.5;
+    text-align: center;
 }
 
 .content p {
     font-size: 14px;
+}
+
+.head-about {
+    font-family: var(--other-font);
+    font-size: 40px;
 }
 
 .content-container img {
@@ -132,7 +147,7 @@ nav li.active a {
     font-size: 24px;
  }
 
- footer .contact-box {
+ .contact-box {
      background: var(--secondary-color);
      padding: 30px 120px;
      margin: 20px;
@@ -163,12 +178,53 @@ nav li.active a {
      background: var(--branding-color);
  }
 
+ .head-contact {
+     font-size: 40px;
+     font-family: var(--second-font);
+     text-align: center;
+ }
+
+ .contact-info p {
+     text-align: center;
+     
+ }
+
+ .contact-info h1 {
+     font-size: 50px;
+ }
+
+ .contact-info h5, .footer-info {
+     text-align: center;
+     font-size: 40px;
+     font-family: var(--second-font);
+ }
+
+ .contact-info h3 {
+     font-size: 20px;
+ }
+
 @media (max-width: 900px) {
+
     .first h1 {
         font-size: 50px;
     }
 
-  
+    .first {
+        padding: 50px 15px;
+    }
+
+    .content h3 {
+        font-size: 30px;
+    }
+
+    .content-container img {
+        width: 200px;
+    }
+
+    .head-about {
+        font-size: 20px;
+    }
+
     .project-description {
         padding: 0;
         text-align: center;
@@ -186,6 +242,7 @@ nav li.active a {
     footer h4 {
         font-size: 26px;
     }
+    
 
     footer .contact-box {
         padding: 30px;
